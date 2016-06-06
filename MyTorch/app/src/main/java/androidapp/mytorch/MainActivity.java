@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
         // on pause turn off the flash
 //        turnOffFlash();
-        turnOnFlash();
+        turnOffFlash();
     }
 
     @Override
@@ -202,18 +202,18 @@ public class MainActivity extends AppCompatActivity {
         getCamera();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-
-        // on stop release the camera
-        if (camera != null) {
-            mp.release();
-            camera = null;
-        }
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//
+//        // on stop release the camera
+//        if (camera != null) {
+//            mp.release();
+//            camera = null;
+//        }
     }
 
-}
+
 
 
 
